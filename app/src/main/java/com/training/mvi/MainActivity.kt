@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     fun sendIntent(view: View){
         lifecycleScope.launchWhenStarted {
-            viewModel.intentChannel.send(MainIntent.addNumber)
+            viewModel.intentChannel.send(MainIntent.AddNumber)
         }
     }
 

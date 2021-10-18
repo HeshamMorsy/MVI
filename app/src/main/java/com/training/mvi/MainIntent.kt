@@ -5,5 +5,5 @@ package com.training.mvi
  */
 sealed class MainIntent {
     // add number
-    object addNumber : MainIntent()
+    object AddNumber : MainIntent()
 }

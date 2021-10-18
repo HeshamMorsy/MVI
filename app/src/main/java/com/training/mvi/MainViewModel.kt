@@ -28,7 +28,7 @@ class MainViewModel : ViewModel(){
         viewModelScope.launch {
             intentChannel.consumeAsFlow().collect {
                 when(it){
-                    is MainIntent.addNumber -> addNumber()
+                    is MainIntent.AddNumber -> addNumber()
                 }
             }
         }
